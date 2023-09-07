@@ -1,0 +1,39 @@
+<p>Mantenimiento Usuarios </p>
+
+<table>
+    <thead>
+        <th> Usuario</th>
+        <th> Nombres</th>
+        <th> Apellidos</th>
+        <th> Departamento</th>
+        <th> Cargo</th>
+
+    </thead>
+   <tbody >
+    <tr *ngFor="let item of usuarios ">
+        <td >
+           {{ item.codigoUsuario}}
+          
+        </td>
+        <td>
+            {{ item.nombres}}
+         
+        </td>
+        <td>
+            {{ item.apellidos}}
+           
+        </td>
+        <td>
+            {{ item.nombreDepartamento}}
+           
+        </td>
+        <td> {{ item.descripcionCargo}}</td>
+    </tr>
+   
+  
+       
+
+    
+   </tbody>
+    
+</table>
